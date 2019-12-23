@@ -68,19 +68,19 @@
               <button type="submit">Send</button>
             </p>
           </form> -->
-          <form name="contact" method="POST" data-netlify="true">
-            <label>Name</label>
-            <!-- <div class="form-row"> -->
-              <input type="text" name="name" placeholder="Enter Name...">
-            <!-- </div> -->
-            <label>Email</label>
-            <!-- <div class="form-row"> -->
-              <input type="email" name="email" placeholder="Enter Email...">
-            <!-- </div> -->
-            <label>Message</label>
-            <!-- <div class="form-row"> -->
-              <textarea name="message" cols="30" rows="10" placeholder="Enter Message..."></textarea>
-            <!-- </div> -->
+          <form name="contact" action="POST" data-netlify="true">
+            <label for="name">Name</label>
+            <div class="form-row">
+              <input required type="text" name="name" placeholder="Enter Name...">
+            </div>
+            <label for="email">Email</label>
+            <div class="form-row">
+              <input required type="email" name="email" placeholder="Enter Email...">
+            </div>
+            <label for="message">Message</label>
+            <div class="form-row">
+              <textarea required name="message" cols="30" rows="10" placeholder="Enter Message..."></textarea>
+            </div>
             <div class="center-btn">
              <button class="btn" type="submit">Send</button>
             </div>
