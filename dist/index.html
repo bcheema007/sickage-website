@@ -48,22 +48,18 @@
       <div id="contact-section">
         <div class="item contact-form">
           <h1>Contact Form</h1>
-          <form name="contact-form1" method="POST" data-netlify="true">
-            <!-- Spam Protection, has a style of display: none so that the paragraph will not show up on the form. -->
-            <p style="display:none;">
-              <label>Don’t fill this out: <input name="bot-field"></label>
-            </p>
+          <form name="contact-form-users" method="POST" data-netlify="true">
             <label for="name">Name</label>
             <div class="form-row">
-              <input required type="text" name="name" id="name" placeholder="Enter Name...">
+              <input required type="text" name="name" placeholder="Enter Name...">
             </div>
             <label for="email">Email</label>
             <div class="form-row">
-              <input required type="email" name="email" id="email" placeholder="Enter Email...">
+              <input required type="email" name="email" placeholder="Enter Email...">
             </div>
             <label for="message">Message</label>
             <div class="form-row">
-              <textarea required name="message" id="message" cols="30" rows="10" placeholder="Enter Message..."></textarea>
+              <textarea required name="message" cols="30" rows="10" placeholder="Enter Message..."></textarea>
             </div>
             <div class="center-btn">
              <button class="btn" type="submit">Send</button>
