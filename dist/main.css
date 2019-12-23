@@ -21,6 +21,16 @@ a {
   cursor: pointer;
 }
 
+input[type=submit] {
+  font-size: 18px;
+  color: white;
+  background-color: #6B0202;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
 .btn {
   font-size: 18px;
   color: white;
@@ -240,7 +250,7 @@ a {
   font-size: 16px;
 }
 
-#contact #contact-section .contact-form .center-btn {
+#contact #contact-section .contact-form input[type=submit] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,7 +260,7 @@ a {
   margin-top: 10px;
 }
 
-#contact #contact-section .contact-form .center-btn .btn {
+#contact #contact-section .contact-form input[type=submit] {
   padding: 10px 30px;
   margin-bottom: 10px;
   border: none;
