@@ -24,6 +24,16 @@ a {
   cursor: pointer;
 }
 
+input[type=submit] {
+  font-size: 18px;
+  color: white;
+  background-color: #6B0202;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
 .btn {
   font-size: 18px;
   color: white;
@@ -34,7 +44,7 @@ a {
   text-align: center;
 }
 
-.btn:hover {
+input[type='submit']:hover {
   background-color: #4D0000;
 }
 
@@ -76,7 +86,7 @@ a {
 }
 
 #showcase {
-  background: $primary-color url('../dist/img/itachi.png') no-repeat center center/cover;
+  background: $primary-color url('../img/itachi.png') no-repeat center center/cover;
   height: 80vh;
 
   #showcase-content {
@@ -198,13 +208,13 @@ a {
     font-size: 16px;
   }
 
-  #contact-section .contact-form .center-btn {
+  #contact-section .contact-form form.contact input[type=submit] {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 
-  #contact-section .contact-form .center-btn .btn {
+  #contact-section .contact-form input[type=submit] {
     padding: 10px 30px;
     margin-bottom: 10px;
     border: none;
@@ -268,12 +278,13 @@ a {
   padding: 25px 20px;
   margin: 5px;
   border: 1px solid white;
-  // border-radius: 50%;
 }
 
 #main-footer .social ul li a {
   cursor: pointer;
   color: $text-color;
+  // padding: 10px 40px;
+  // border-radius: 50%;
 }
 
 #main-footer .social ul li:last-child {
@@ -283,7 +294,7 @@ a {
 /* confirmation.html styling */
 
 .container-1 {
-  background: url('../img/minato.jpg') no-repeat center center/cover ;
+  background: url('../img/minato.jpg') no-repeat 63% 63%/cover ;
   height: 100vh;
 }
 
@@ -299,31 +310,32 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .confirmed-h1 {
-  color: 		#D8A892;
+  color: rgba(136, 131, 213, 0.9);
   margin-bottom: 15px;
   font-size: 45px;
 } 
 
 .confirmed-p {
-  color: #ee7441;
+  color:	rgba(235, 88, 127, 0.9);
   font-size: 30px;
   margin-top: 10px;
+  line-height: 1.0;
 }
 
 .container-1 .wrapper-1 a.btn {
   margin-top: 15px;
   border-radius: 10px;
   padding: 1rem 1.5rem;
-  background-color: #EACDBD;
-  color: #8075B8;
+  background-color: rgba(206, 187, 173, 0.9);
+  color: rgba(128, 117, 184, 0.9);
 }
 
 .container-1 .wrapper-1 a.btn:hover {
-  background-color:	none;
+  background-color:	rgba(206, 187, 173, 1);
 }
 
 @media screen 
@@ -377,12 +389,16 @@ a {
     align-self: center;
   }
 
+  #contact {
+    height: 330vh;
+  }
+
   #main-footer .social ul li {
     padding: 10px;
   }
 
   #main-footer {
-    margin-top: 209px;
+    margin-top: 0px;
     padding: 20px;
   }
 
@@ -432,12 +448,16 @@ a {
     align-self: center;
   }
 
+  #contact {
+    height: 300vh;
+  }
+
   #main-footer .social ul li {
     padding: 10px;
   }
 
   #main-footer {
-    margin-top: 106px;
+    margin-top: 0px;
     padding: 20px;
   }
 
@@ -487,12 +507,16 @@ a {
       align-self: center;
     }
 
+    #contact {
+      height: 310vh;
+    }
+
     #main-footer .social ul li {
       padding: 10px;
     }
   
     #main-footer {
-      margin-top: 107px;
+      margin-top: 0px;
       padding: 20px;
     }
     
@@ -542,12 +566,16 @@ a {
       align-self: center;
     }
 
+    #contact {
+      height: 360vh;
+    }
+
     #main-footer .social ul li {
       padding: 10px;
     }
   
     #main-footer {
-      margin-top: 289px;
+      margin-top: 0px;
       padding: 20px;
     }
 
@@ -588,9 +616,13 @@ a {
     #contact #contact-section .contact-me ul li {
       font-size: 16px;
     }
+
+    #contact {
+      height: 330vh;
+    }
   
     #main-footer {
-      margin-top: 178px;
+      margin-top: 0px;
       padding: 20px;
     }
 
@@ -648,9 +680,13 @@ a {
     #contact #contact-section .contact-me ul li {
       font-size: 20px;
     }
+
+    #contact {
+      height: 300vh;
+    }
   
     #main-footer {
-      margin-top: 101px;
+      margin-top: 0px;
       padding: 20px;
     }
 
@@ -694,7 +730,7 @@ a {
   and (orientation: landscape) {
 
     #showcase #showcase-content h1.showcase-h1 {
-      margin-top: 35px;
+      margin-top: 45px;
     }
 
     #videos {
@@ -710,12 +746,16 @@ a {
       align-self: center;
     }
 
+    #contact {
+      height: 340vh;
+    }
+
     #contact #contact-section .contact-me ul li {
       font-size: 20px;
     }
   
     #main-footer {
-      margin-top: 178px;
+      margin-top: 0px;
       padding: 20px;
     }
 
@@ -774,7 +814,7 @@ a {
     height: 250px;
   }
 
-  #contact #contact-section .contact-form .center-btn .btn {
+  #contact #contact-section .contact-form input[type=submit] {
     margin-top: 10px;
     padding: 15px 40px;
   }
@@ -794,6 +834,29 @@ a {
 
   #main-footer .social ul li {
     padding: 10px 5px;
+  }
+
+  .confirmed-h1 {
+    color: rgba(136, 131, 213, 1);
+    margin-bottom: 15px;
+    font-size: 55px;
+    line-height: 1.0;
+  } 
+  
+  .confirmed-p {
+    color:	rgba(235, 88, 127, 1);
+    font-size: 40px;
+    margin-top: 10px;
+    line-height: 1.0;
+  }
+  
+  .container-1 .wrapper-1 a.btn {
+    font-size: 30px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 2rem 2.5rem;
+    background-color: rgba(206, 187, 173, 1);
+    color: rgba(128, 117, 184, 1);
   }
 
 }
@@ -822,16 +885,13 @@ a {
       margin-top: 35px;
     }
   
-    #videos {
-      height: 70vh;
-    }
-  
     #videos .container .items {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
 
     #videos .container .items iframe {
+      margin-top: 60px;
       width: 400px;
       height: 200px;
     }
@@ -854,7 +914,7 @@ a {
       height: 250px;
     }
   
-    #contact #contact-section .contact-form .center-btn .btn {
+    #contact #contact-section .contact-form input[type=submit] {
       margin-top: 10px;
       padding: 15px 40px;
     }
@@ -874,6 +934,29 @@ a {
   
     #main-footer .social ul li {
       padding: 10px 5px;
+    }
+
+    .confirmed-h1 {
+      color: rgba(136, 131, 213, 1);
+      margin-bottom: 15px;
+      font-size: 55px;
+      line-height: 1.0;
+    } 
+    
+    .confirmed-p {
+      color:	rgba(235, 88, 127, 1);
+      font-size: 40px;
+      margin-top: 10px;
+      line-height: 1.0;
+    }
+    
+    .container-1 .wrapper-1 a.btn {
+      font-size: 30px;
+      margin-top: 15px;
+      border-radius: 10px;
+      padding: 2rem 2.5rem;
+      background-color: rgba(206, 187, 173, 1);
+      color: rgba(128, 117, 184, 1);
     }
 
 }
@@ -933,7 +1016,7 @@ a {
     height: 250px;
   }
 
-  #contact #contact-section .contact-form .center-btn .btn {
+  #contact #contact-section .contact-form input[type=submit] {
     margin-top: 10px;
     padding: 15px 40px;
   }
@@ -960,6 +1043,29 @@ a {
     padding: 10px 5px;
   }
 
+  .confirmed-h1 {
+    color: rgba(136, 131, 213, 1);
+    margin-bottom: 15px;
+    font-size: 70px;
+    line-height: 1.0;
+  } 
+  
+  .confirmed-p {
+    color:	rgba(235, 88, 127, 1);
+    font-size: 55px;
+    margin-top: 10px;
+    line-height: 1.0;
+  }
+  
+  .container-1 .wrapper-1 a.btn {
+    font-size: 35px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 2.5rem 3rem;
+    background-color: rgba(206, 187, 173, 1);
+    color: rgba(128, 117, 184, 1);
+  }
+
 }
 
 @media screen 
@@ -978,7 +1084,7 @@ a {
   
     #home #navbar ul li {
       font-size: 30px;
-      padding: 0px 15px;
+      padding: 0px 25px 0px 15px;
     }
   
     #showcase #showcase-content h1.showcase-h1 {
@@ -1018,7 +1124,7 @@ a {
       height: 250px;
     }
   
-    #contact #contact-section .contact-form .center-btn .btn {
+    #contact #contact-section .contact-form input[type=submit] {
       margin-top: 10px;
       padding: 15px 40px;
     }
@@ -1051,9 +1157,32 @@ a {
       padding: 10px 5px;
     }
 
+    .confirmed-h1 {
+      color: rgba(136, 131, 213, 1);
+      margin-bottom: 15px;
+      font-size: 70px;
+      line-height: 1.0;
+    } 
+    
+    .confirmed-p {
+      color:	rgba(235, 88, 127, 1);
+      font-size: 55px;
+      margin-top: 10px;
+      line-height: 1.0;
+    }
+    
+    .container-1 .wrapper-1 a.btn {
+      font-size: 35px;
+      margin-top: 15px;
+      border-radius: 10px;
+      padding: 2.5rem 3rem;
+      background-color: rgba(206, 187, 173, 1);
+      color: rgba(128, 117, 184, 1);
+    }
+
 }
 
-@media screen and (min-width: 1024px) and (max-height: 1310px)  {
+@media screen and (min-width: 1025px) and (max-width: 1280px)  {
 
     #home #navbar h1.logo {
       margin-left: 10px;
@@ -1079,7 +1208,7 @@ a {
     }
   
     #videos {
-      height: 115vh;
+      height: 105vh;
     }
   
     #videos .container .items {
@@ -1088,13 +1217,13 @@ a {
     }
 
     #videos .container .items iframe {
-      width: 470px;
-      height: 270px;
+      width: 430px;
+      height: 230px;
     }
   
     #videos .container .items h3 {
       align-self: center;
-      font-size: 28px;
+      font-size: 25px;
     }
 
     #contact {
@@ -1126,7 +1255,7 @@ a {
       height: 180px;
     }
   
-    #contact #contact-section .contact-form .center-btn .btn {
+    #contact #contact-section .contact-form input[type=submit] {
       margin-top: 10px;
       padding: 15px 40px;
     }
@@ -1163,7 +1292,6 @@ a {
     }
 
 }
-
 
 
 
